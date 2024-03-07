@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificador e Decodificador de Texto</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="imgs/escudo.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <img class="imgCabecalho" src="imgs/link.png" alt="linkOfZelda">
+        <h1 class="tituloCodificador">Codificador e Decodificador de texto</h1>
+        <h1 class="tituloDecodificador">Mensagens Codificadas</h1>
+    </header>
+    <main class="mainContainer">
+        <div class="cotainer-input">
+            <div class="input">
+                <textarea id="input-texto" placeholder="Digite um texto aqui"></textarea>
+                <p>Atenção: Apenas letras MAIÚSCULAS e sem acento!</p>
+            </div>
+
+            <div id="output">
+                <img class="imgOutput" src="imgs/navio.png">
+                <h2 class="outputH2">Sua mensagem aparecerá aqui</h2>
+                <span class="span">Digite um texto que voce deseja Criptografar ou Descriptografar.</span>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <div class="container-btn">
+                <button onclick="criptografar()" class="btn-criptografar">Criptografar</button>
+                <button onclick="descriptografar()" class="btn-descriptografar">Descriptografar</button>
+            </div>
+        </div>
+    </main>
+    <footer class="rodape">
+        <div class="icons">
+            <a href="https://github.com/sabrinassantoss"><ion-icon name="logo-github"></ion-icon></a>
+        </div>
+        <h3 class="rodapeH3">Desenvolvido por Sabrina Santos</h3>
+    </footer>
+    <script src="js/main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

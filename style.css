@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+:root {
+    --primary-color: #008caf;
+    --secondary-color: rgb(15, 117, 15);
+    --tird-color: rgb(141, 7, 7);
+    --primary-font: "Madimi One", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--primary-font);
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--primary-color);
+    box-sizing: border-box;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.tituloCodificador {
+    color: var(--secondary-color);
+}
+
+.tituloDecodificador {
+    color: var(--secondary-color);
+}
+
+.imgCabecalho {
+    max-width: 70px;
+    max-height: 70px;
+    width: auto;
+    height: auto;
+}
+
+.cotainer-input {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 0 0 4%;
+}
+
+.input {
+    width: 400px;
+    height: 330px;
+}
+
+#input-texto {
+    width: 345px;
+    height: 330px;
+    font-size: 20px;
+    color: var(--secondary-color);
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: 0;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.input-texto {
+    width: 345px;
+    height: 330px;
+    font-size: 20px;
+    color: var(--secondary-color);
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: 0;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+#output {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid var(--secondary-color);
+    border-radius: 20px;
+    width: 350px;
+    height: 400px;
+    margin-right: 3%;
+    background-color: var(--primary-color);
+}
+
+.outputH2 {
+    text-align: center;
+    font-size: 25px;
+    color: var(--secondary-color);
+}
+
+.span {
+    font-size: 16px;
+    text-align: center;
+}
+
+.imgOutput {
+    max-width: 300px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+    margin-top: 4%;
+}
+
+.btn-criptografar,
+.btn-descriptografar {
+    border: 2px solid var(--secondary-color);
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--tird-color);
+    width: 150px;
+    height: 50px;
+    margin-left: 4%;
+    cursor: pointer;
+}
+
+.btn-copiar {
+    border: 2px solid var(--secondary-color);
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--tird-color);
+    width: 150px;
+    height: 50px;
+    margin-bottom: 10%;
+    margin-left: 30%;
+    cursor: pointer;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    margin-top: 15px;
+    background: var(--secondary-color);
+    color: var(--secondary-color);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
+
+.rodapeH3 {
+    font-size: 16px;
+    color: var(--tird-color);
+}
+
+.icons {
+    width: 25px;
+    height: 25px;
+}
+
+@media(max-width: 1200px) {
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .mainContainer {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+}
